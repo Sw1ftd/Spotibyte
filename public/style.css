@@ -1,6 +1,6 @@
 body {
-    background-color: #222;
-    color: gold;
+    background-color: gold;
+    color: black;
     text-align: center;
 }
 
@@ -27,4 +27,8 @@ input {
 
 .hidden {
     display: none;
+}
+li {
+    width: 30%;
+    margin: 0px auto;
 }

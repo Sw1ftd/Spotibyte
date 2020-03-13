@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Spotibyte</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <body>
+        <header>
+            <h1>Spotibyte</h1>
+        </header>
+        <section id="songList">
+            <h1>Song List:</h1>
+            <label for="song">Enter Song: </label>
+            <input name="song" required>
+            <input type="submit" onClick="addSong(event)">
+            <ul>
+                <li class="song">
+                    <h3>No One will Save You</h3>            
+                    <button onClick="likeSong(item.itemid, event)">Like Song</button>
+                </li>
+            </ul>
+        </section>
+        <section id="items">
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>

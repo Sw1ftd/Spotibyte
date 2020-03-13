@@ -18,10 +18,10 @@ function loadItems() {
 function createItemCards(_items) {
     items = _items
     const itemsHTML = _items.map(item => 
-        `<div class="item">
+        `<li class="song">
             <h3>Name: ${item.name}</h3>            
             <button onClick="addToCart(${item.itemid}, event)">Add to Cart</button>
-        </div>`
+        </li>`
     ).join('')
     $itemsContainer.innerHTML = itemsHTML    
 }
@@ -51,6 +51,9 @@ function login(event) {
         .then( response => console.log(response) )
         .catch(err => console.error(err))
 
+}
+function addSong(event) {
+    
 }
 
 function addToCart(id, event) {
